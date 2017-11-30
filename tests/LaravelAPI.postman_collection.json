@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LaravelAPI",
+		"_postman_id": "59e9dc19-916a-d600-d94b-1753151ee719",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetRecipeById",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/recipes/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRecipesByCuisine",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/recipes/cuisine/british",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecipeRate",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/recipe/rate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"recipes_id\" : 1,\n    \"rating\": 2,\n    \"comment\" : \"Comment\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecipes",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/recipes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"box_type\": \"gourmet\",\n\t\"title\": \"Tamil Nadu Prawn Masala\",\n\t\"short_title\": null,\n\t\"marketing_description\": \"a marketing description\",\n\t\"calories_kcal\": \"545\",\n\t\"protein_grams\": \"98\",\n\t\"fat_grams\": \"100\",\n\t\"carbs_grams\": \"0\",\n\t\"bulletpoint1\": null,\n\t\"bulletpoint2\": null,\n\t\"bulletpoint3\": null,\n\t\"recipe_diet_type_id\": \"fish\",\n\t\"season\": \"all\",\n\t\"base\": \"noodles\",\n\t\"protein_source\": \"seafood\",\n\t\"preparation_time_minutes\": \"35\",\n\t\"shelf_life_days\": \"4\",\n\t\"equipment_needed\": \"Appetite\",\n\t\"origin_country\": \"Great Britain\",\n\t\"recipe_cuisine\": \"italian\",\n\t\"in_your_box\": null,\n\t\"gousto_reference\": \"58\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PutRecipes",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/recipes/10",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"box_type\": \"gourmet\",\n\t\"title\": \"Tamil Nadu Prawn Masala\",\n\t\"short_title\": null,\n\t\"marketing_description\": \"a marketing description\",\n\t\"calories_kcal\": \"545\",\n\t\"protein_grams\": \"98\",\n\t\"fat_grams\": \"100\",\n\t\"carbs_grams\": \"0\",\n\t\"bulletpoint1\": null,\n\t\"bulletpoint2\": null,\n\t\"bulletpoint3\": null,\n\t\"recipe_diet_type_id\": \"fish\",\n\t\"season\": \"all\",\n\t\"base\": \"noodles\",\n\t\"protein_source\": \"seafood\",\n\t\"preparation_time_minutes\": \"35\",\n\t\"shelf_life_days\": \"4\",\n\t\"equipment_needed\": \"Appetite\",\n\t\"origin_country\": \"Great Britain\",\n\t\"recipe_cuisine\": \"italian\",\n\t\"in_your_box\": null,\n\t\"gousto_reference\": \"58\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
