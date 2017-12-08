@@ -1,5 +1,5 @@
 # Laravel API Test
-This is a test project for Gousto
+This is a test project
 
 
 ## How to use
